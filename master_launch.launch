@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- Запуск трансформов -->
+  <include file="$(find your_package_name)/launch/static_transform_publisher.launch" />
+  
+  <!-- Запуск hector_mapping -->
+  <include file="$(find your_package_name)/launch/hector_mapping.launch" />
+</launch>
