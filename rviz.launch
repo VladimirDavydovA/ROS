@@ -1,0 +1,13 @@
+<launch>
+
+  <!-- Set the namespace -->
+  <arg name="namespace" default=""/>
+
+  <!-- Set parameters for rviz -->
+  <param name="rviz/frame_rate" value="30"/>
+  <param name="rviz/default_fixed_frame" value="map"/>
+
+  <!-- Load rviz -->
+  <node pkg="rviz" type="rviz" name="rviz" args="-d $(find wowa_bot)/config/rviz_config.rviz" output="screen"/>
+
+</launch>
